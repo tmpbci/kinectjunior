@@ -1,6 +1,7 @@
 Kinect Junior v0.1
 by Sam Neurohack
 samneurohack at gmail dot com
+License information : Creative Commons BY
 
 
 Basic control of bioloid beginner with a kinect in rebol.
