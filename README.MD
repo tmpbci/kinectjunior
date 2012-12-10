@@ -21,9 +21,12 @@ kinectjunior has been successfully tested on OS X. If you can get Synapse workin
 
 Todo : Easier to launch process. Support other Kinect OSC bridge like OSCeleton. Better TCP -> Serial server
 
+
+
 -----------------------------------------------------------------------------------------
 
 Contrôle basique d'un robot bioloid beginner avec une kinect en rebol.
+
 Kinectjunior se connecte au serveur OSC de Synapse, analyse les coordonnées des mains droites et gauches et commande les positions des bras via le port série du robot. Le lien série en rebol sous OS X est buggy donc un serveur tcp -> serie en ruby est utilisé. La prochaine version sera plus simple d'utilisation.
 
 
