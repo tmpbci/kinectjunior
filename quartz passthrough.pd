@@ -1,0 +1,26 @@
+#N canvas 235 164 910 215 10;
+#X declare -lib mrpeach;
+#X obj 21 11 import mrpeach;
+#X obj 140 9 loadbang;
+#X obj 140 35 metro 2000;
+#X obj 140 100 packOSC;
+#X msg 140 67 send /righthand_trackjointpos 3;
+#X msg 339 67 send /lefthand_trackjointpos 3;
+#X msg 531 67 send /head_trackjointpos 3;
+#X msg 704 67 send /head_trackjointpos 3;
+#X msg 226 9 connect localhost 12346;
+#X msg 382 9 disconnect;
+#X obj 140 128 udpsend;
+#X text 39 165 Click on Connect locahost 12346 during Synapse startup
+\, otherwise Synapse Crash.;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 2 0 5 0;
+#X connect 2 0 7 0;
+#X connect 3 0 10 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 0;
+#X connect 7 0 3 0;
+#X connect 8 0 10 0;
+#X connect 9 0 10 0;
